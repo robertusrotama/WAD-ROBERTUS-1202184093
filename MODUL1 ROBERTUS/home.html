@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Home</title>
+    <style>
+        .youtube{
+            margin-left: 15px;
+            margin-top: 100px;
+            width: 450px;
+            height: 250px;
+        }
+    </style>
+  </head>
+  <body class="bg-light">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a href="#"class="navbar-brand">
+            <img src="logoEAD.png"width="140" height="40" alt="LogoEAD">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="profile.html">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="products.html">Products</a>
+              </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- container -->
+    <div class="container mt-5">
+        <div class="card-group">
+            <div class="card shadow-none p-3 mb-5 bg-secondary border-0">
+                <div class="card-body">
+                    <iframe src="http://bit.ly/VideoEAD2020" class="youtube" frameborder="0"></iframe>
+                </div>
+            </div>
+            <div class="card shadow-sm p-3 mb-5 bg-white border-0">
+                <div class="card-body">
+                    <h4 class="card-title text-center">Registrasi Data Pelanggan</h4>
+                    <div class="container">
+                        <form class="mt-5">
+                            <div class="form-group row">
+                                <div class="col ml-3">
+                                    <label for="inputNama" class="col-form-label">Nama</label>
+                                </div>
+                                <div class="col-6 mr-3">
+                                    <input type="text" class="form-control" placeholder="Nama anda..">
+                                </div>
+                            </div>
+                            <div class="form-group row mt-4">
+                                <div class="col ml-3">
+                                    <label class="col-form-label">Nomor.HP</label>
+                                </div>
+                                <div class="col-6 mr-3">
+                                    <input type="inputHP" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group row mt-4">
+                                <div class="col ml-3">
+                                    <label class="col-form-label">Alamat</label>
+                                </div>
+                                <div class="col-6 mr-3">
+                                    <textarea class="form-control" id="alamat" cols="5" rows="2"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group row mt-4">
+                                <div class="col ml-3">
+                                    <label class="col-form-label">Pembayaran</label>
+                                </div>
+                                <div class="col-6 mr-3 mt-2">
+                                    <div class= "form-check form-check-inline">
+                                        <input class="form-check-input"type="radio" name="check" value="cash" id="tunai">
+                                        <label class="form-check-label" for="tunai">Cash</label>
+                                    </div>
+                                    <div class= "form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="check" value="credit" id="kredit">
+                                        <label class="form-check-label" for="kredit">Credit</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row mt-4">
+                                <div class="col ml-3">
+                                    <label class="col-form-label">Kategori Pesanan</label>
+                                </div>
+                                <div class="col-6 mr-3">
+                                    <select id="inputState" class ="form-control">
+                                        <option selected>Keyboard</option>
+                                        <option>Komputer</option>
+                                        <option>Mouse</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class=form-group>
+                                <div class=col ml-2>
+                                    <button type="button" class="btn btn-primary btn-block mt4">Kirim</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
