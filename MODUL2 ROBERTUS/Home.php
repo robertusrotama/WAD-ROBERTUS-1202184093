@@ -59,7 +59,7 @@
                         </div>
                         <!-- tombol book now -->
                         <div class="card-footer">
-                            <button type="submit" class="btn btn-primary" name="book" value="Standard">Book Now</button>
+                            <button type="submit" class="btn btn-primary" nama="book" value="Standard">Book Now</button>
                         </div>
                     </div>
                     <div class="card">
@@ -88,7 +88,7 @@
                             </table>
                         </div>
                         <div class="card-footer">
-                            <button type="submit" class="btn btn-primary" name="book" value="Superior">Book Now</button>
+                            <button type="submit" class="btn btn-primary" nama="book" value="Superior">Book Now</button>
                         </div>
                     </div>
                     <div class="card">
@@ -123,7 +123,7 @@
                             </table>
                         </div>
                         <div class="card-footer">
-                            <button type="submit" class="btn btn-primary" name="book" value="Luxury">Book Now</button>
+                            <button type="submit" class="btn btn-primary" nama="book" value="Luxury">Book Now</button>
                         </div>
                     </div>
                 </div>

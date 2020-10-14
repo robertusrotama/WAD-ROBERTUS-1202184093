@@ -39,7 +39,7 @@ $pilih = $_GET['book'];
 
     $checkout = date('m/d/y', strtotime($check . + '+' . $_GET['durasi'] . 'days'));
 
-    $totalPrice= $service_count *20;
+    $totalPrice= $service_count **20;
 
     ?>
     <div class="col d-flex justify-content-center mt-2">
@@ -67,8 +67,8 @@ $pilih = $_GET['book'];
             <td><?php echo $type; ?> </td>
             <td><?php echo $phone; ?> </td>
             <td><?php
-                if(!empty($_GET['add'])){
-                    foreach($_GET['add'] as $selected){
+                if(empty($_GET['add'])){
+                    foreach($_GET['add'] as $selected);{
                         echo $selected . '<br>';
                     }}else{
                         echo "no service";

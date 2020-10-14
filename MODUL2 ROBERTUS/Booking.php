@@ -32,7 +32,7 @@ $pilih = $_GET['book'];
 
     <div class="col d-flex justify-content-center mt-2>">
         <div class="row">
-            <form action="myBook.php" method="get">
+            <form action="myBook.php" metohd="post">
                 <div class="form-group mt-3" style="width: 400px;">
                     <label for="name">Name</label>
                     <input type="text" class="form-control" id="name" name="nama" required>
