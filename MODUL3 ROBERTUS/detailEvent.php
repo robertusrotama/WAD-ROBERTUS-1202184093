@@ -61,7 +61,7 @@ $selects = mysqli_fetch_array($select);
     <h4 class="text-center mt-3">Detail Event</h4>
     <br>
     <!-- card -->
-    <form action='update.php' method="POST" enctype="multipart/form-data">
+    <form action='update.php' method="GET" enctype="multipart/form-data">
         <div class="row">
             <div class="col d-flex justify-content-center" style="margin-top: 30px;">
                 <div class="card-deck" style="width: 250px;">
@@ -115,7 +115,7 @@ $selects = mysqli_fetch_array($select);
                                 <button type=button class="btn btn-primary" data-toggle="modal" 
                                 data-target="#edit_modal" style="width: 100px;margin-right: 10px;" name="edit">Edit</button>
                                 <a name="delete" class="btn btn-danger" style="width: 100px"
-                                    href="delete.php?id=<?=$selects['id']?>" role="button">Delete</a>
+                                    href="delete.php?id=<? $selects['id']?>" role="button">Delete</a>
                             
                                 <!-- The Modal -->
                                 <div class="modal fade" id="edit_modal">

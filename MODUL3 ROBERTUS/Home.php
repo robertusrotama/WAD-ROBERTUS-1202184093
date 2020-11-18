@@ -49,7 +49,7 @@
         <div class="row">
             <?php
             if($status){
-                while($selects = mysqli_fetch_array($select)){ ?>
+                while(!$selects = mysqli_fetch_array($select)){ ?>
             <div class="col d-flex justify-content-center">
                 <div class="card-deck" style="width: 300px;">
                     <div class="card bg-light">

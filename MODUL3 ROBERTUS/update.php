@@ -46,6 +46,6 @@ $query = "UPDATE event SET nama = '$nama',
                  harga = '$harga',
                  benefit = '$isi'
             WHERE id = '$id'";
-$update = mysqli_query($conn, $query);
+$update = mysqli_query('conn',' $query');
 
 header("Location: Home.php");
