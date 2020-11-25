@@ -40,8 +40,8 @@ include "connect.php";
         $password = $_POST["password"];
         $konfirmasi_password = $_POST["konfirmasi_password"];
 
-        if ($password == $konfirmasi_password) {
-            $password = password_hash($_POST["password"], PASSWORD_DEFAULT);
+        if ($password != $konfirmasi_password) {
+            $password = password_hash($password, PASSWORD_DEFAULT);
 
             // menyiapkan query
             $sql = "INSERT INTO user (nama, email, no_hp, password)
@@ -56,7 +56,7 @@ include "connect.php";
                 ":password" => $password,
             );
             // eksekusi query untuk menyimpan ke database
-            $saved = $update->execute($params);
+            $saved = $update->execute($sql);
             echo '<div class="alert alert-success">Berhasil Registrasi!</div>';
         } else {
             echo '<div class="alert alert-success">Password tidak cocok!</div>';

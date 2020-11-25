@@ -34,7 +34,7 @@
         $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_STRING);
         $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
 
-        $sql = "SELECT * FROM user WHERE email=email";
+        $sql = "SELECT * FROM user WHERE email= email";
         $stmt = $conn->prepare($sql);
 
         $params = array(":email" => $email);

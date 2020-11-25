@@ -1,5 +1,5 @@
 <?php
-require "auth.php";
+
 include "connect.php";
 include "warna.php";
 
@@ -79,7 +79,7 @@ $no_hp = filter_input(INPUT_POST, 'no_hp', FILTER_SANITIZE_STRING);
                 echo '<div class="alert alert-success">Password tidak cocok</div>';
             } else {
                 $password = password_hash($_POST["password"], PASSWORD_DEFAULT);
-                $sql = "UPDATE user SET nama=:nama, no_hp=:no_hp, password=:password WHERE id = '$id'";
+                $sql = "UPDATE user SET nama=:nama, no_hp=:no_hp, password=:password WHERE id = 'id'";
                 $stmt = $conn->prepare($sql);
 
                 $params = array(
