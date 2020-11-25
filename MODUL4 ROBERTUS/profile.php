@@ -2,6 +2,7 @@
 
 include "connect.php";
 include "warna.php";
+include "auth.php";
 
 // filter data yang diinputkan
 // $id = $_SESSION["user"]["id"];
