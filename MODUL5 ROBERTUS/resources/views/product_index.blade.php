@@ -26,7 +26,7 @@
                     <th>Action</th>
                 </tr>
             </thead>
-            @foreach ($products as $product)
+            @foreach ($product as $product)
             <tr>
                 <td>{{ $loop->iteration }}</td>
                 <td style="width: 500px">{{ $product->name }}</td>

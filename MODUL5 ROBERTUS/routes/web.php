@@ -37,7 +37,7 @@ Route::resource('product', ProductController::class);
 
 Route::resource('order', OrderController::class);
 
-Route::get('history','OrderController@history');
+Route::resource('history','OrderController@history');
 
 
 

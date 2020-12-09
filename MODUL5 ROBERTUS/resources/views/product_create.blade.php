@@ -5,8 +5,7 @@
 
 <div class="d-flex justify-content-center" style="margin-top: 15px;">
 
-<form action="/product" method="POST" enctype="multipart/form-data" style="width: 1000px">
-        @csrf
+<form action="/product" method="POST" enctype="multipart/form-data" style="width: 1000px">        
 
         <div class="from-group" >
             <label for="name">Product Name</label>
